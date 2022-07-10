@@ -14,6 +14,4 @@ public interface UserDao {
 
     User getUserById(Long id);
 
-    User updateUser(User user);
-
 }

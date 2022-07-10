@@ -12,7 +12,7 @@ import java.util.List;
 @Repository
 public class UserDaoImpl implements UserDao {
 
-    @Autowired
+
     @PersistenceContext
     private EntityManager entityManager;
 
@@ -37,11 +37,5 @@ public class UserDaoImpl implements UserDao {
     public User getUserById(Long id) {
         return entityManager.find(User.class, id);
     }
-
-    @Override
-    public User updateUser(User user) {
-        return entityManager.merge(user);
-    }
-
 
 }
