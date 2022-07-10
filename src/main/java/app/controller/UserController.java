@@ -2,7 +2,6 @@ package app.controller;
 
 import app.entity.User;
 import app.service.UserService;
-import app.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,7 +13,7 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-    private UserService service = new UserServiceImpl();
+    private UserService service;
 
     @GetMapping(value = {"/", "/list"})
     public String showAllUsers(Model model) {
