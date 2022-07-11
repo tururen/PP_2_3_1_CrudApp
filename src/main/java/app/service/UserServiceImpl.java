@@ -11,8 +11,12 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
+    private final UserDao dao;
+
     @Autowired
-    private UserDao dao;
+    public UserServiceImpl(UserDao dao) {
+        this.dao = dao;
+    }
 
     @Override
     public List<User> getAll() {
