@@ -1,4 +1,4 @@
-package app.config;
+package home.tur.CrudApp.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -14,7 +14,7 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("app")
+@ComponentScan("home.tur.CrudApp")
 public class WebConfig implements WebMvcConfigurer {
 
     private final ApplicationContext applicationContext;

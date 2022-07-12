@@ -1,6 +1,6 @@
-package app.service;
+package home.tur.CrudApp.service;
 
-import app.entity.User;
+import home.tur.CrudApp.entity.User;
 
 import java.util.List;
 

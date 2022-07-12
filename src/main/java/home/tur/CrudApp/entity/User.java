@@ -1,4 +1,4 @@
-package app.entity;
+package home.tur.CrudApp.entity;
 
 import javax.persistence.*;
 import java.util.Objects;
